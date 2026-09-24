@@ -365,8 +365,33 @@ h3 {
 .t-k { color: #7cb3ff; }
 .t-f { color: #c4a7ff; }
 .t-o { color: #f0a868; }
+.t-s { color: #9ece6a; }
+.t-ok { color: #4ade80; margin-right: 4px; }
 
-.code-caption { padding: 0 22px 16px; font-size: 0.78rem; color: #8a97ad; }
+.result {
+  margin: 0 22px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+}
+.result-row {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+}
+.result-row:first-child { border-top: 0; }
+.result-col {
+  padding: 8px 12px;
+  color: #8a97ad;
+  background: rgba(255, 255, 255, 0.03);
+  border-right: 1px solid rgba(148, 163, 184, 0.12);
+  letter-spacing: 0.04em;
+}
+.result-val { padding: 8px 12px; color: #e6ebf5; }
+
+.code-caption { padding: 12px 22px 16px; font-family: var(--mono); font-size: 0.76rem; color: #8a97ad; }
 
 @media (min-width: 960px) {
   .hero { padding: 104px 0 40px; }
@@ -436,6 +461,52 @@ h3 {
 }
 .note .i { color: var(--accent); margin-top: 3px; }
 .note p { margin: 0; }
+
+/* Como trabalho */
+.pillar-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.pillar-head .card-icon { margin-bottom: 0; }
+
+.card .pillar-kind {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.pillar h3 { font-size: 1.2rem; }
+
+.check-list {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.check-list li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--muted);
+  font-size: 0.97rem;
+  line-height: 1.6;
+}
+.check-list li::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: var(--accent);
+  transform: rotate(45deg);
+}
+
+@media (min-width: 960px) {
+  .pillar { padding: 28px; }
+  .project-featured .check-list { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; }
+}
 
 /* Projetos */
 .project-featured { grid-column: 1 / -1; }
@@ -611,7 +682,9 @@ h3 {
 
 @media (max-width: 480px) {
   .code { font-size: 0.8rem; padding: 18px 18px 12px; }
-  .code-caption { padding: 0 18px 14px; }
+  .code-caption { padding: 12px 18px 14px; }
+  .result { margin: 0 18px; font-size: 0.76rem; }
+  .result-row { grid-template-columns: 64px 1fr; }
   .card { padding: 20px; }
 }
 
