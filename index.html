@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2026092404" />
 
   <script>
     (function () {
@@ -36,7 +36,7 @@
       document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js?v=2026092404" defer></script>
 
   <script type="application/ld+json">
   {
@@ -151,21 +151,18 @@
             <span class="code-file">apresentacao.sql</span>
           </div>
 <pre class="code" aria-hidden="true"><code><span class="t-c">-- quem sou eu, em uma consulta</span>
-<span class="t-k">select</span> d.nome,
-       d.cargo,
+<span class="t-k">select</span> d.nome, d.cargo,
        <span class="t-f">listagg</span>(s.nome, <span class="t-s">' · '</span>)
-         <span class="t-k">within group</span>
-         (<span class="t-k">order by</span> s.nivel <span class="t-k">desc</span>)
-         <span class="t-k">as</span> stack
-  <span class="t-k">from</span> devs d
-  <span class="t-k">join</span> skills s
-    <span class="t-k">on</span> s.dev_id <span class="t-o">=</span> d.id
- <span class="t-k">where</span> d.github <span class="t-o">=</span> <span class="t-s">'pontesvjp'</span>
+       <span class="t-k">within group</span>
+       (<span class="t-k">order by</span> s.nivel <span class="t-k">desc</span>) stack
+  <span class="t-k">from</span> ti.devs d, ti.skills s
+ <span class="t-k">where</span> s.id_dev <span class="t-o">=</span> d.id_dev
+   <span class="t-k">and</span> d.github <span class="t-o">=</span> <span class="t-s">'pontesvjp'</span>
  <span class="t-k">group by</span> d.nome, d.cargo;</code></pre>
           <div class="result" aria-hidden="true">
-            <div class="result-row"><span class="result-col">NOME</span><span class="result-val">Vinicius Pontes</span></div>
-            <div class="result-row"><span class="result-col">CARGO</span><span class="result-val">Desenvolvedor Júnior</span></div>
-            <div class="result-row"><span class="result-col">STACK</span><span class="result-val">Regra de negócio · IA aplicada · PL/SQL · Integrações · PHP</span></div>
+            <div class="result-row"><span class="result-col">NOME</span> <span class="result-val">Vinicius Pontes</span></div>
+            <div class="result-row"><span class="result-col">CARGO</span> <span class="result-val">Desenvolvedor Júnior</span></div>
+            <div class="result-row"><span class="result-col">STACK</span> <span class="result-val">Regra de negócio · IA aplicada · PL/SQL · Integrações · PHP</span></div>
           </div>
           <figcaption class="code-caption"><span class="t-ok">✓</span> 1 linha selecionada.</figcaption>
         </figure>
