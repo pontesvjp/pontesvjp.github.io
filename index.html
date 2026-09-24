@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vinicius Pontes — Desenvolvedor Júnior | Oracle PL/SQL, ERP e Integrações</title>
+  <meta name="description" content="Portfólio de Vinicius Pontes: Oracle PL/SQL, ERP e integrações — regra de negócio medida em produção, agentes de IA com trava no código e integração com WhatsApp Business API." />
+  <link rel="canonical" href="https://pontesvjp.github.io/" />
+  <meta name="theme-color" content="#070b14" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://pontesvjp.github.io/" />
+  <meta property="og:title" content="Vinicius Pontes — Desenvolvedor Júnior" />
+  <meta property="og:description" content="Oracle PL/SQL, ERP e Integrações. Regra de negócio medida em produção e agentes de IA com trava no código." />
+  <meta property="og:image" content="https://pontesvjp.github.io/assets/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vinicius Pontes",
+    "jobTitle": "Desenvolvedor Júnior",
+    "url": "https://pontesvjp.github.io/",
+    "address": { "@type": "PostalAddress", "addressLocality": "Sumaré", "addressRegion": "SP", "addressCountry": "BR" },
+    "knowsAbout": ["Oracle PL/SQL", "ERP", "Integração de sistemas", "WhatsApp Business API", "Agentes de IA"],
+    "sameAs": ["https://www.linkedin.com/in/pontesvjp", "https://github.com/pontesvjp"]
+  }
+  </script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M8 16v-4M13 16V8M18 16v-7"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V5"/><circle cx="12" cy="4" r="1"/><path d="M9 13v2M15 13v2"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M6 8v8M18 8v1a5 5 0 0 1-5 5H8"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><path d="m4 17 6-5-6-5M12 19h8"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 2v6M15 2v6"/><path d="M6 8h12v4a6 6 0 0 1-12 0z"/><path d="M12 18v4"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#topo" aria-label="Vinicius Pontes, início">
+        <span class="brand-mark" aria-hidden="true">VP</span>
+        <span class="brand-name">Vinicius Pontes</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Seções">
+        <a href="#metodo">Método</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#competencias">Competências</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Alternar tema claro e escuro">
+          <svg class="i i-theme-dark" aria-hidden="true"><use href="#i-sun"/></svg>
+          <svg class="i i-theme-light" aria-hidden="true"><use href="#i-moon"/></svg>
+        </button>
+        <details class="nav-mobile">
+          <summary class="icon-btn" aria-label="Abrir menu">
+            <svg class="i" aria-hidden="true"><use href="#i-menu"/></svg>
+          </summary>
+          <nav class="nav-mobile-panel" aria-label="Seções">
+            <a href="#metodo">Método</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#competencias">Competências</a>
+            <a href="#trajetoria">Trajetória</a>
+            <a href="#contato">Contato</a>
+          </nav>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="kicker">Desenvolvedor Júnior</p>
+          <h1>Vinicius Pontes</h1>
+          <p class="hero-role">Oracle PL/SQL, ERP e Integrações</p>
+          <p class="hero-lead">
+            Trabalho no ERP Oracle da AgRoss Insumos, distribuidora de insumos agrícolas. Meu foco é
+            regra de negócio: consulto dados de produção para verificar se a regra está sendo aplicada
+            e implemento a correção no sistema.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projetos">
+              Ver projetos
+              <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/pontesvjp" target="_blank" rel="noopener">
+              <svg class="i i-fill" aria-hidden="true"><use href="#i-linkedin"/></svg>
+              LinkedIn
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/pontesvjp" target="_blank" rel="noopener">
+              <svg class="i i-fill" aria-hidden="true"><use href="#i-github"/></svg>
+              GitHub
+            </a>
+          </div>
+          <ul class="hero-facts" aria-label="Resumo">
+            <li><svg class="i" aria-hidden="true"><use href="#i-db"/></svg>ERP Oracle em produção</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-briefcase"/></svg>Duas promoções internas</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-cap"/></svg>ADS · UNASP · dez/2026</li>
+          </ul>
+        </div>
+
+        <figure class="code-card" aria-label="Exemplo ilustrativo de consulta SQL: medir antes de corrigir">
+          <div class="code-bar" aria-hidden="true">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="code-file">exemplo.sql</span>
+          </div>
+<pre class="code" aria-hidden="true"><code><span class="t-c">-- antes de corrigir, medir</span>
+<span class="t-k">select</span> condicao,
+       prazo_esperado,
+       prazo_aplicado,
+       <span class="t-f">count</span>(*) <span class="t-k">as</span> pedidos
+  <span class="t-k">from</span> pedidos_faturados
+ <span class="t-k">where</span> prazo_aplicado
+       <span class="t-o">&lt;&gt;</span> prazo_esperado
+ <span class="t-k">group by</span> condicao,
+       prazo_esperado,
+       prazo_aplicado
+ <span class="t-k">order by</span> pedidos <span class="t-k">desc</span>;</code></pre>
+          <figcaption class="code-caption">Exemplo ilustrativo — não é código da empresa.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="metodo" aria-labelledby="metodo-titulo">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">Método</p>
+          <h2 id="metodo-titulo">Como eu trabalho</h2>
+          <p class="section-lead">Erro visível alguém reporta. Erro plausível vira boleto com vencimento errado e ninguém percebe — é esse que eu vou procurar.</p>
+        </header>
+
+        <div class="grid grid-4">
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true"><svg class="i"><use href="#i-search"/></svg></span>
+            <h3>Desconfio do plausível</h3>
+            <p>Resultado que parece certo é o que mais precisa de conferência. Começo pela pergunta ao banco, não pela resposta pronta.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true"><svg class="i"><use href="#i-chart"/></svg></span>
+            <h3>Meço em produção</h3>
+            <p>Abro o banco, conto e registro o número com data, ao lado da decisão que ele justifica.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true"><svg class="i"><use href="#i-target"/></svg></span>
+            <h3>Procuro o defeito verdadeiro</h3>
+            <p>O sintoma raramente é o problema. Antes de corrigir, reenquadro: qual regra está errada e onde ela deveria morar?</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true"><svg class="i"><use href="#i-lock"/></svg></span>
+            <h3>Travo no código</h3>
+            <p>Ação irreversível de agente de IA passa por confirmação persistida e releitura do estado — nunca só por instrução no prompt.</p>
+          </article>
+        </div>
+
+        <aside class="note reveal">
+          <svg class="i" aria-hidden="true"><use href="#i-terminal"/></svg>
+          <p>Escrevo código dentro do <strong>Claude Code</strong>, com skills e agentes que eu mesmo construo — e a IA só acessa o banco por uma conta somente leitura.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projetos" aria-labelledby="projetos-titulo">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">Projetos</p>
+          <h2 id="projetos-titulo">O que eu construí</h2>
+          <p class="section-lead">O código do dia a dia é de ERP de empresa e fica privado. Aqui está o que eu fiz e como, sem código nem dado da empresa.</p>
+        </header>
+
+        <div class="grid grid-2">
+          <article class="card project project-featured reveal">
+            <div class="project-head">
+              <span class="card-icon" aria-hidden="true"><svg class="i"><use href="#i-bot"/></svg></span>
+              <p class="project-kind">Destaque · IA aplicada</p>
+            </div>
+            <h3>Agente de IA de vendas no WhatsApp</h3>
+            <p>Atende o cliente no WhatsApp: interpreta o pedido em texto livre, consulta catálogo e preço no Oracle em tempo real, aplica a alçada de desconto calculada no servidor e grava o pedido no ERP. O fornecedor de IA é configurável por tabela, com Anthropic e DeepSeek lado a lado.</p>
+            <p class="role"><strong>Meu papel:</strong> trabalho em equipe, com a minha parte nas ferramentas de consulta ao banco com JSON Schema, na telemetria por atendimento e nas travas de confirmação.</p>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>PHP</li><li>Oracle</li><li>API da Anthropic</li><li>DeepSeek</li><li>WhatsApp Business API</li><li>JSON Schema</li>
+            </ul>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project-head">
+              <span class="card-icon" aria-hidden="true"><svg class="i"><use href="#i-shield"/></svg></span>
+              <p class="project-kind">IA aplicada · Financeiro</p>
+            </div>
+            <h3>Agente de aprovação com trava no código</h3>
+            <p>Um agente de IA que executa ação financeira irreversível não pode depender do prompt para confirmar.</p>
+            <p class="role"><strong>Meu papel:</strong> implementei a confirmação em duas mensagens gravada em tabela com janela de expiração, a releitura do estado depois da execução e nenhum retry em operação não idempotente — para não duplicar título no contas a pagar.</p>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>PHP</li><li>Oracle</li><li>LLM</li><li>Tool use</li>
+            </ul>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project-head">
+              <span class="card-icon" aria-hidden="true"><svg class="i"><use href="#i-search"/></svg></span>
+              <p class="project-kind">Auditoria · Regra de negócio</p>
+            </div>
+            <h3>O prazo que casava errado</h3>
+            <p>A condição de pagamento era traduzida por substring, então “60 dias” casava com “360 dias”. O erro era plausível: virava boleto com vencimento errado em parte das filiais, e ninguém percebia.</p>
+            <p class="role"><strong>Meu papel:</strong> medi em produção, reenquadrei o problema e entreguei a correção combinando com o time a ordem de deploy entre banco e aplicação, para nenhuma nota ser faturada errado durante a janela.</p>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>Oracle SQL</li><li>PL/SQL</li><li>PHP</li>
+            </ul>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project-head">
+              <span class="card-icon" aria-hidden="true"><svg class="i"><use href="#i-layout"/></svg></span>
+              <p class="project-kind">Plataforma · Banco de dados</p>
+            </div>
+            <h3>Telas geradas pelo banco de dados</h3>
+            <p>A consulta, o layout e o comportamento da tela ficam no banco: o PL/SQL devolve a tela pronta, então publicar ou corrigir uma tela não exige deploy da aplicação.</p>
+            <p class="role"><strong>Meu papel:</strong> entreguei nesse modelo uma rotina completa — da tabela e da procedure até o item de menu, a tela e o chat — em scripts versionados.</p>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>Oracle PL/SQL</li><li>PHP</li><li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project-head">
+              <span class="card-icon" aria-hidden="true"><svg class="i"><use href="#i-chat"/></svg></span>
+              <p class="project-kind">Integração · Comercial</p>
+            </div>
+            <h3>Canal de vendas no WhatsApp</h3>
+            <p>Canal usado pela equipe comercial para consultar histórico de vendas, produtos e ações comerciais direto no chat.</p>
+            <p class="role"><strong>Meu papel:</strong> participei da construção do canal e automatizei o disparo diário para a carteira, com calendário, teto por dia e opt-out controlados no banco.</p>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>PHP</li><li>Oracle</li><li>Meta WhatsApp Business API</li><li>Webhooks</li>
+            </ul>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project-head">
+              <span class="card-icon" aria-hidden="true"><svg class="i"><use href="#i-terminal"/></svg></span>
+              <p class="project-kind">Ferramental · IA</p>
+            </div>
+            <h3>Skills de IA para o time</h3>
+            <p>Conjunto de skills do Claude Code que mapeiam telas, processos e objetos de banco do ERP, distribuído para a equipe.</p>
+            <p class="role"><strong>Meu papel:</strong> construí as skills e a porta única de conexão ao Oracle, travada em conta somente leitura — recusa qualquer outra credencial, inclusive vinda de variável de ambiente.</p>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>Claude Code</li><li>PHP</li><li>Oracle</li>
+            </ul>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project-head">
+              <span class="card-icon" aria-hidden="true"><svg class="i"><use href="#i-branch"/></svg></span>
+              <p class="project-kind">Práticas · Time</p>
+            </div>
+            <h3>Versionamento e deploy do time</h3>
+            <p>Sistemas de produção levados para controle de versão, com caminho de volta garantido.</p>
+            <p class="role"><strong>Meu papel:</strong> escrevi o deploy por webhook com rollback por commit, o pipeline de verificação no GitHub Actions, os hooks de pré-commit e pré-push e a documentação de onboarding.</p>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>Git</li><li>GitHub Actions</li><li>Linux</li><li>Shell</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="competencias" aria-labelledby="competencias-titulo">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">Competências</p>
+          <h2 id="competencias-titulo">No que eu trabalho</h2>
+        </header>
+
+        <div class="grid grid-3">
+          <div class="skill-group reveal">
+            <h3><svg class="i" aria-hidden="true"><use href="#i-db"/></svg>Banco de dados</h3>
+            <ul class="chips">
+              <li>Oracle Database</li><li>PL/SQL: procedures, functions, triggers, views</li><li>SQL analítico (window functions)</li><li>Múltiplos schemas</li><li>SQL dinâmico (DBMS_SQL)</li><li>DBMS_LOB</li><li>Modelagem de tabelas de integração</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3><svg class="i" aria-hidden="true"><use href="#i-plug"/></svg>Integração</h3>
+            <ul class="chips">
+              <li>APIs REST</li><li>Web Services</li><li>JSON</li><li>XML</li><li>Webhooks</li><li>NF-e de entrada</li><li>Meta WhatsApp Business API</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3><svg class="i" aria-hidden="true"><use href="#i-bot"/></svg>IA aplicada</h3>
+            <ul class="chips">
+              <li>LLM por API (Anthropic, DeepSeek)</li><li>Tool use com JSON Schema</li><li>Memória de conversa</li><li>Telemetria de tokens e latência</li><li>Confirmação de ação irreversível em código</li><li>Claude Code</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3><svg class="i" aria-hidden="true"><use href="#i-terminal"/></svg>Linguagens</h3>
+            <ul class="chips">
+              <li>PL/SQL</li><li>SQL</li><li>PHP</li><li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3><svg class="i" aria-hidden="true"><use href="#i-branch"/></svg>Infra e práticas</h3>
+            <ul class="chips">
+              <li>Linux (nginx, cron, systemd)</li><li>Git</li><li>GitHub Actions</li><li>Deploy por webhook com rollback</li><li>Incidente em produção</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3><svg class="i" aria-hidden="true"><use href="#i-file"/></svg>Domínio de negócio</h3>
+            <ul class="chips">
+              <li>ERP: comercial, logística, financeiro, fiscal, estoque</li><li>CRM</li><li>WMS</li><li>Condição de pagamento</li><li>Preço e margem</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="growing reveal"><strong>Em desenvolvimento:</strong> testes automatizados e inglês.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="trajetoria" aria-labelledby="trajetoria-titulo">
+      <div class="container two-col">
+        <div>
+          <header class="section-head reveal">
+            <p class="kicker">Trajetória</p>
+            <h2 id="trajetoria-titulo">Experiência</h2>
+          </header>
+
+          <ol class="timeline">
+            <li class="reveal">
+              <p class="tl-org">AgRoss Insumos <span>· Paulínia, SP</span></p>
+              <p class="tl-note">Distribuidora de insumos agrícolas. Entrei como estagiário e fui promovido duas vezes.</p>
+              <ol class="tl-roles">
+                <li>
+                  <p class="tl-role">Assistente de Desenvolvimento de Software</p>
+                  <p class="tl-date">abr/2026 – atual</p>
+                  <p class="tl-desc">Agente de IA no WhatsApp, travas de ação irreversível, NF-e de entrada por Web Services, versionamento e deploy do time.</p>
+                </li>
+                <li>
+                  <p class="tl-role">Auxiliar de Desenvolvimento</p>
+                  <p class="tl-date">jul/2025 – abr/2026</p>
+                  <p class="tl-desc">Telas geradas pelo banco, PL/SQL para regras comerciais, fiscais e financeiras, consultas sobre múltiplos schemas.</p>
+                </li>
+                <li>
+                  <p class="tl-role">Estagiário de Desenvolvimento Fullstack</p>
+                  <p class="tl-date">jan/2025 – jul/2025</p>
+                  <p class="tl-desc">Manutenção de rotinas do ERP Oracle e de telas internas, consultas SQL de apoio às áreas e sustentação em produção.</p>
+                </li>
+              </ol>
+            </li>
+            <li class="reveal">
+              <p class="tl-org">Colégio Notre Dame de Campinas <span>· Campinas, SP</span></p>
+              <ol class="tl-roles">
+                <li>
+                  <p class="tl-role">Estagiário de Suporte de TI</p>
+                  <p class="tl-date">mar/2023 – set/2024</p>
+                  <p class="tl-desc">Suporte a hardware e aplicações para professores e alunos, e apoio aos sistemas internos.</p>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <header class="section-head reveal">
+            <p class="kicker">Formação</p>
+            <h2>Estudos</h2>
+          </header>
+          <ul class="edu">
+            <li class="card reveal">
+              <span class="card-icon" aria-hidden="true"><svg class="i"><use href="#i-cap"/></svg></span>
+              <div>
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <p>UNASP · conclusão em dez/2026</p>
+              </div>
+            </li>
+            <li class="card reveal">
+              <span class="card-icon" aria-hidden="true"><svg class="i"><use href="#i-cap"/></svg></span>
+              <div>
+                <h3>Técnico em Informática</h3>
+                <p>UNASP · 2020</p>
+              </div>
+            </li>
+            <li class="card reveal">
+              <span class="card-icon" aria-hidden="true"><svg class="i"><use href="#i-file"/></svg></span>
+              <div>
+                <h3>Certificados Alura</h3>
+                <p>Oracle Database (projeções, seleções, joins e views) · PL/SQL · Desenvolvimento Web com PHP</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato" aria-labelledby="contato-titulo">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="kicker">Contato</p>
+          <h2 id="contato-titulo">Vamos conversar</h2>
+          <p>O canal mais rápido é o LinkedIn.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/pontesvjp" target="_blank" rel="noopener">
+              <svg class="i i-fill" aria-hidden="true"><use href="#i-linkedin"/></svg>
+              LinkedIn
+            </a>
+            <a class="btn btn-secondary" href="https://github.com/pontesvjp" target="_blank" rel="noopener">
+              <svg class="i i-fill" aria-hidden="true"><use href="#i-github"/></svg>
+              GitHub
+            </a>
+          </div>
+          <p class="location"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>Sumaré, SP</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Vinicius Pontes</p>
+      <p><a href="https://github.com/pontesvjp/pontesvjp.github.io" target="_blank" rel="noopener">Código deste site</a></p>
+    </div>
+  </footer>
+</body>
+</html>
